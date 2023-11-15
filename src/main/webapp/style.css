@@ -1,0 +1,75 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+.container { max-width: 800px; margin: auto; }
+.header, .nav-links, .content { margin-bottom: 20px; text-align: center; }
+table {
+    width: 100%;
+    border-collapse: separate; /* 设置为separate以支持圆角 */
+    border-spacing: 0; /* 移除单元格之间的间距 */
+    border-radius: 10px; /* 设置表格四角的圆角 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 添加阴影 */
+    overflow: hidden; /* 用于维持圆角效果 */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* 单元格之间添加水平分割线 */
+}
+
+th {
+    background-color: #f2f2f2;
+    border-top: 1px solid #ddd; /* 第一行顶部添加分割线 */
+}
+
+td {
+    border-right: 1px solid #ddd; /* 单元格之间添加垂直分割线 */
+}
+
+td:last-child {
+    border-right: none; /* 最后一列单元格去除垂直分割线 */
+}
+
+tr:last-child td {
+    border-bottom: none; /* 最后一行单元格去除水平分割线 */
+}
+/*td:last-child, th:last-child {*/
+/*    white-space: nowrap; !* 防止文本换行 *!*/
+/*    text-align: center; !* 如果您希望文本居中显示 *!*/
+/*}*/
+th {
+    white-space: nowrap; /* 防止文本换行 */
+}
+form { text-align: center; margin-top: 20px; }
+select, button { padding: 5px 10px; margin-right: 10px; }
+button:hover { background-color: #f2f2f2; }
+#tips { color: green; }
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0056b3; /* 默认颜色 */
+    font-size: 16px;
+    transition: color 0.3s, background-color 0.3s; /* 平滑过渡 */
+}
+
+.nav-links a:hover, .nav-links a:focus {
+    color: #004085; /* 悬停时颜色 */
+    background-color: cornflowerblue; /* 悬停时背景色 */
+    text-decoration: none; /* 移除悬停时的下划线 */
+}
+
+.nav-links a:active {
+    color: cornflowerblue; /* 点击时的颜色 */
+}
+
+.nav-links a:visited {
+    color: #0056b3; /* 已访问的链接颜色 */
+}
+.delete-links a{
+    text-decoration: none;
+    color: darkred; /* 默认颜色 */
+    transition: color 0.3s, background-color 0.3s; /* 平滑过渡 */
+}
+.delete-links a:hover, .nav-links a:focus {
+    color: red; /* 悬停时颜色 */
+    text-decoration: none; /* 移除悬停时的下划线 */
+}
